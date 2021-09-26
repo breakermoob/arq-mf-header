@@ -50,15 +50,20 @@
     "webpack-config-single-spa-react-ts": "^4.0.0"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "single-spa-react": "^4.3.1",
     "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.19",
+    "@types/react-bootstrap": "^0.32.26",
+    "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
+    "bootstrap": "^5.1.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.0",
+    "react-dom": "^17.0.2",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.3.0",
     "single-spa": "^5.9.3",
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9"
+    "single-spa-react": "^4.3.1"
   },
   "types": "dist/microfrontends-mf-header.d.ts"
 }
