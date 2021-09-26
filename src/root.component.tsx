@@ -14,7 +14,7 @@ const Root = (props) => {
       <Container className="d-flex align-items-center">
         <LinkContainer to="/">
           <Navbar.Brand className="d-flex align-items-center">
-            <i className="fab fa-react fa-2x" aria-hidden="true" />
+            <i className="fab fa-react fa-2x" style={{ color: "#61dbfb" }} aria-hidden="true" />
             <h2 style={{ margin: "0.5rem" }}>Microfrontends</h2>
           </Navbar.Brand>
         </LinkContainer>
