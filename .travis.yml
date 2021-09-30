@@ -10,10 +10,10 @@ before_install:
   - pip install -U pip
   - pip install awscli
 script:
-  - yarn build
+  - npm run build:webpack
   - echo "Commit sha - $TRAVIS_COMMIT"
   - mkdir -p dist/@microfrontends/mf-header/$TRAVIS_COMMIT
-  - mv dist/@microfrontends/mf-header/*.* dist/@microfrontends/mf-header/$TRAVIS_COMMIT/
+  - mv dist/*.* dist/@microfrontends/mf-header/$TRAVIS_COMMIT/
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
