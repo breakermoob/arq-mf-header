@@ -12,8 +12,8 @@ before_install:
 script:
   - npm run build:webpack
   - echo "Commit sha - $TRAVIS_COMMIT"
-  - mkdir -p dist/@microfrontends/mf-header/$TRAVIS_COMMIT
-  - mv dist/*.* dist/@microfrontends/mf-header/$TRAVIS_COMMIT/
+  - mkdir -p dist/@microfrontends/mf-header/
+  - mv dist/*.* dist/@microfrontends/mf-header/
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
