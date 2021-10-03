@@ -2,10 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { LinkContainer } from 'react-router-bootstrap';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  BrowserRouter as Router
 } from "react-router-dom";
 
 const Root = (props) => {
@@ -23,24 +20,12 @@ const Root = (props) => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <LinkContainer to="/perfil">
-              <Nav.Link>Perfil</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/login">
-              <Nav.Link>Ingresar</Nav.Link>
-            </LinkContainer>
+            <Nav.Link href="https://www.microfrontends.rocks/blog">Blog</Nav.Link>
+            <Nav.Link href="https://admin.microfrontends.rocks">Panel</Nav.Link>
             <NavDropdown title="Ver más" id="collasible-nav-dropdown">
-              <LinkContainer to="/detalles">
-                <NavDropdown.Item>
-                  Panel - Subdominio
-                </NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/blog">
-                <NavDropdown.Item>Blog - Path</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/perfil">
-                <NavDropdown.Item>Librería - NPM</NavDropdown.Item>
-              </LinkContainer>
+              <NavDropdown.Item
+                href="https://www.npmjs.com/package/arq-mf-weblib"
+                target="_blank" >Librería - NPM</NavDropdown.Item>
               <NavDropdown.Divider />
               <LinkContainer to="/">
                 <NavDropdown.Item>Guía Completa</NavDropdown.Item>
